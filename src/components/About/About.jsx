@@ -9,7 +9,7 @@ export default class About extends Component {
 
                     <div className='bottomline about-div'>
 
-                        <h1>About Vartha</h1>
+                        <h1 style={{ marginBottom: '15px', }} >About Vartha</h1>
                         <p>
                             Vartha is an open-source news web application built using React and <a href="https://gnews.io" target="_blank" rel="noopener noreferrer">GNewsAPI</a>, dedicated to delivering the latest and most reliable news to our users. Our platform is designed to provide a seamless and user-friendly experience for staying informed about current events from around the world.
                         </p>
@@ -39,7 +39,7 @@ export default class About extends Component {
 
                     <h3 className='bottomline'>
 
-                        We value and encourage community collaboration. Vartha is an open-source project, and we welcome contributions from developers worldwide. If you're interested in getting involved or have suggestions for improvements, please visit our GitHub repository.
+                        We value and encourage community collaboration. Vartha is an open-source project, and we welcome contributions from developers worldwide. If you're interested in getting involved or have suggestions for improvements, please visit our <a href="https://github.com/Mithun-750/Vartha" target="_blank" rel="noopener noreferrer">GitHub repository</a>.
                     </h3>
 
                     <h4>
