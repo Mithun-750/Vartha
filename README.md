@@ -15,7 +15,7 @@
 
 <h2>Usage</h2>
 
-<p>To use this web site visit <a href="https://vartha.netlify.app/" ></a></p>
+<p>To use this web site visit <a href="https://vartha.netlify.app/" >Vartha</a></p>
 
 <p>Upon opening the Vartha News Website, you will be presented with the latest news articles from various sources. You can navigate between different categories or search news on a topic using the top navigation menu. Clicking on a news article will redirect you to the detailed article view, where you can read the full content.</p>
 
