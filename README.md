@@ -13,21 +13,21 @@
   <li>Integration of React Top Loading Bar to provide visual feedback during loading.</li>
 </ul>
 
-<h2>Installation</h2>
-
-<ol>
-  <li>Clone the repository: <code>git clone https://github.com/your-username/vartha-news-website.git</code></li>
-  <li>Navigate to the project directory: <code>cd vartha-news-website</code></li>
-  <li>Install the dependencies: <code>npm install</code></li>
-  <li>Start the development server: <code>npm start</code></li>
-  <li>Open your browser and visit <a href="http://localhost:3000">http://localhost:3000</a> to see the website in action.</li>
-</ol>
-
 <h2>Usage</h2>
+
+<p>To use this web site visit <a href="https://vartha.netlify.app/" ></a></p>
 
 <p>Upon opening the Vartha News Website, you will be presented with the latest news articles from various sources. You can navigate between different categories or search news on a topic using the top navigation menu. Clicking on a news article will redirect you to the detailed article view, where you can read the full content.</p>
 
 <p>The website also provides the option to switch between light and dark themes.</p>
+
+<h2>Limitations</h2>
+<p>While using the Vartha News Website, please note the following limitations:</p>
+<ul>
+  <li>API Requests: The website utilizes the gnews.io API to fetch news articles. The API has a limitation of 100 requests per day. Once this limit is reached, you will not be able to fetch additional news articles until the next day.</li>
+  <li>Number of Articles: Each API request returns a maximum of 10 articles. Therefore, the Vartha News Website can display up to 10 articles per request. If you have reached the daily limit of API requests, you may not be able to view additional articles until the limit resets.</li>
+</ul>
+<p>It's important to keep these limitations in mind while using the Vartha News Website to ensure a smooth and uninterrupted news browsing experience.</p>
 
 <h2>Dependencies</h2>
 
