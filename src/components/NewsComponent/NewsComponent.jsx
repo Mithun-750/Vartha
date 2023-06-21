@@ -120,7 +120,7 @@ export default class NewsComponent extends Component {
                     {this.state.articlesError && (
                         <div className='Error-message'>
                             <h2 style={{ textAlign: 'center' }}>Failed to find articles for you :(</h2>
-                            <h3>WHY?</h3>
+                            <h3>WHY? Must be one of the following reasons..</h3>
                             <ul>
                                 <li>
                                     <h4>This website gets its news from <a href="https://gnews.io/#pricing" target="_blank" rel="noopener noreferrer">gnews.io</a> which is not free. We will be able to get articles only 100 times a day and we must have reached our limit today please come back tommorow.If you like reading news from this super cool website you could donate us.</h4>
