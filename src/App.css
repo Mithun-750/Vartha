@@ -1,0 +1,32 @@
+#supreme {
+  color: azure;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#supreme::before {
+  content: '';
+  background-color: rgb(41, 42, 45);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#supreme.light {
+  color: rgb(41, 42, 45);
+  background-color: aquamarine;
+}
+
+.px {
+  height: 125px;
+}

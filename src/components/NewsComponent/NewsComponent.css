@@ -1,0 +1,32 @@
+.NewsComponent {
+    background-color: rgb(31, 31, 31);
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.NewsComponent.light {
+    background-color: rgb(245 245 245);
+}
+
+.NewsComponentTitle {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Error-message {
+    width: 90%;
+}
+
+.Error-message h2 {
+    margin-bottom: 20px;
+}
+
+.Error-message h3 {
+    margin: 20px 0px;
+}
