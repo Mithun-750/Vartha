@@ -7,7 +7,7 @@ export default class About extends Component {
             <>
                 <div id="about">
 
-                    <div className='bottomline'>
+                    <div className='bottomline about-div'>
 
                         <h1>About Vartha</h1>
                         <p>
@@ -15,7 +15,7 @@ export default class About extends Component {
                         </p>
                     </div>
 
-                    <div className='features bottomline'>
+                    <div className='features bottomline about-div'>
                         <h1>Key Features:</h1>
                         <div>
                             <h3>Real-time News Updates:</h3> Our web app integrates with reputable news APIs to bring you the most up-to-date news articles from a wide range of trusted sources.
