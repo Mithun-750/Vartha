@@ -69,7 +69,7 @@
 
 <ul>
   <li>Email: mail4mithun.u@gmail.com</li>
-  <li>GitHub: <a href="https://github.com/Mithun-750">your-username</a></li>
+  <li>GitHub: <a href="https://github.com/Mithun-750">Mithun-750</a></li>
 </ul>
 
 <p>Thank you for using the Vartha News Website! We hope you enjoy using it to stay updated with the latest news.</p>
