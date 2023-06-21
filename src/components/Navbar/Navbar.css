@@ -123,7 +123,6 @@ nav ul {
     width: fit-content;
     justify-content: space-around;
     background-color: rgb(32, 33, 36);
-    margin-top: 15px;
 }
 
 #dropdown-content.light {
