@@ -24,6 +24,9 @@ body {
 
 #supreme.light {
   color: rgb(41, 42, 45);
+}
+
+#supreme.light::before {
   background-color: aquamarine;
 }
 
