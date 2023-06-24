@@ -9,6 +9,7 @@ import LoadingBar from 'react-top-loading-bar'
 
 class App extends Component {
   apikey = import.meta.env.VITE_REACT_APP_NEWS_API
+  apikey2 = import.meta.env.VITE_REACT_APP_NEWS_API2
   constructor(props) {
     super(props);
 
@@ -97,19 +98,19 @@ class App extends Component {
           />
           <div className="px"></div>
           <Routes>
-            <Route path="/" element={<NewsComponent apikey={this.apikey} country={this.state.Country} category='general' theme={this.state.theme} setProgress={this.setProgress} />} />
+            <Route path="/" element={<NewsComponent apikey2={this.apikey2} apikey={this.apikey} country={this.state.Country} category='general' theme={this.state.theme} setProgress={this.setProgress} />} />
             <Route path="/about" element={<About />} />
-            <Route path="/business" element={<NewsComponent apikey={this.apikey} country={this.state.Country} category='business' theme={this.state.theme} setProgress={this.setProgress} />} />
-            <Route path="/technology" element={<NewsComponent apikey={this.apikey} country={this.state.Country} category='technology' theme={this.state.theme} setProgress={this.setProgress} />} />
-            <Route path="/health" element={<NewsComponent apikey={this.apikey} country={this.state.Country} category='health' theme={this.state.theme} setProgress={this.setProgress} />} />
-            <Route path="/science" element={<NewsComponent apikey={this.apikey} country={this.state.Country} category='science' theme={this.state.theme} setProgress={this.setProgress} />} />
-            <Route path="/sports" element={<NewsComponent apikey={this.apikey} country={this.state.Country} category='sports' theme={this.state.theme} setProgress={this.setProgress} />} />
-            <Route path="/entertainment" element={<NewsComponent apikey={this.apikey} country={this.state.Country} category='entertainment' theme={this.state.theme} setProgress={this.setProgress} />} />
+            <Route path="/business" element={<NewsComponent apikey2={this.apikey2} apikey={this.apikey} country={this.state.Country} category='business' theme={this.state.theme} setProgress={this.setProgress} />} />
+            <Route path="/technology" element={<NewsComponent apikey2={this.apikey2} apikey={this.apikey} country={this.state.Country} category='technology' theme={this.state.theme} setProgress={this.setProgress} />} />
+            <Route path="/health" element={<NewsComponent apikey2={this.apikey2} apikey={this.apikey} country={this.state.Country} category='health' theme={this.state.theme} setProgress={this.setProgress} />} />
+            <Route path="/science" element={<NewsComponent apikey2={this.apikey2} apikey={this.apikey} country={this.state.Country} category='science' theme={this.state.theme} setProgress={this.setProgress} />} />
+            <Route path="/sports" element={<NewsComponent apikey2={this.apikey2} apikey={this.apikey} country={this.state.Country} category='sports' theme={this.state.theme} setProgress={this.setProgress} />} />
+            <Route path="/entertainment" element={<NewsComponent apikey2={this.apikey2} apikey={this.apikey} country={this.state.Country} category='entertainment' theme={this.state.theme} setProgress={this.setProgress} />} />
             {this.state.dynamicRoutes.map((route, index) => (
               <Route
                 key={index}
                 path={`/${route}`}
-                element={<NewsComponent apikey={this.apikey} country={this.state.Country} category="" q={route} theme={this.state.theme} setProgress={this.setProgress} />}
+                element={<NewsComponent apikey2={this.apikey2} apikey={this.apikey} country={this.state.Country} category="" q={route} theme={this.state.theme} setProgress={this.setProgress} />}
               />
             ))}
             <Route path='*' element={<Navigate to='/' />} />

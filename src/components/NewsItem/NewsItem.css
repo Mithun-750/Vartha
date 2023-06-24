@@ -24,6 +24,7 @@
     background-color: rgb(32, 33, 36);
     border-top: 0.5px solid azure;
     border-bottom: 0.5px solid azure;
+    margin-bottom: 5px;
 }
 
 .ItemTitle.light {
@@ -57,4 +58,46 @@
 
 .daysAgo a {
     color: rgb(121, 120, 120);
+}
+
+.title-des {
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.title-des.hide {
+    opacity: 0;
+    height: 0;
+}
+
+.content {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.content.hide {
+    opacity: 0;
+    height: 0;
+}
+
+@media (max-width:375px) {
+    .title-des {
+        height: 325px;
+    }
+
+    .content {
+        height: 250px;
+    }
 }

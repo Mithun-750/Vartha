@@ -68,11 +68,33 @@ export default class NewsComponent extends Component {
                 return response.json()
             })
             .then((data) => {
-                this.setState({ loding: false })
                 if (data.errors) {
-                    this.setState({ articlesError: true })
-                    throw new Error("Error fetching articles");
+
+                    url = url.replace(apikey, this.props.apikey2);
+                    fetch(url).then((response) => { return response.json() }).then((data) => {
+                        if (data.errors) {
+                            this.setState({ articlesError: true })
+                            throw new Error("Error fetching articles");
+
+                        } else {
+                            this.setState({ loding: false })
+
+
+                            if (data.articles.length < 1) {
+                                this.setState({ noarticles: true });
+
+                            } else {
+                                this.setState({ noarticles: false });
+
+                            }
+
+                            this.setState({ articles: data.articles });
+                            this.props.setProgress(80)
+                        }
+                    })
+
                 } else {
+                    this.setState({ loding: false })
                     if (data.articles.length < 1) {
                         this.setState({ noarticles: true });
 
@@ -93,6 +115,8 @@ export default class NewsComponent extends Component {
             });
     }
 
+
+
     render() {
         return (
             <>
@@ -109,7 +133,7 @@ export default class NewsComponent extends Component {
                 </h1>
                 <div className={`NewsComponent ${this.props.theme}`} >
                     {this.state.articles.map((element) => {
-                        return <NewsItem key={element.title} image={element.image} title={element.title} description={element.description} theme={this.props.theme} url={element.url} publishedAt={element.publishedAt} source={element.source} />
+                        return <NewsItem key={element.title} image={element.image} title={element.title} description={element.description} content={element.content} theme={this.props.theme} url={element.url} publishedAt={element.publishedAt} source={element.source} />
                     })}
                     {this.state.loding && (
                         <img src={loader} alt="loading..." />
@@ -145,5 +169,6 @@ NewsComponent.propTypes = {
     theme: PropTypes.string,
     setProgress: PropTypes.func,
     country: PropTypes.string,
-    apikey: PropTypes.string
+    apikey: PropTypes.string,
+    apikey2: PropTypes.string,
 };
