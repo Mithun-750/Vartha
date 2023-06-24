@@ -4,7 +4,15 @@
   width: 100%;
   min-height: 100vh;
   min-width: 100vw;
+  cursor: url(https://cdn.custom-cursor.com/db/8118/32/material-maki-cursor.png) 1 1, auto !important;
 }
+
+
+#supreme a,
+#supreme button {
+  cursor: url(https://cdn.custom-cursor.com/db/8117/32/material-maki-pointer.png) 1 1, auto !important;
+}
+
 
 #supreme::before {
   content: '';

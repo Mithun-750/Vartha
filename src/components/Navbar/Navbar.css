@@ -52,7 +52,7 @@ nav ul {
     font-family: 'Orbit', sans-serif;
     margin: 15px;
     color: azure;
-    cursor: pointer;
+    cursor: url(https://cdn.custom-cursor.com/db/8117/32/material-maki-pointer.png) 1 1, auto !important;
 }
 
 #logo.light {
@@ -85,7 +85,7 @@ nav ul {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     width: 75px;
-    cursor: pointer;
+    cursor: url(https://cdn.custom-cursor.com/db/8117/32/material-maki-pointer.png) 1 1, auto !important;
     transition: all 1s ease-in;
 }
 
@@ -99,7 +99,7 @@ nav ul {
 }
 
 #categories {
-    cursor: pointer;
+    cursor: url(https://cdn.custom-cursor.com/db/8117/32/material-maki-pointer.png) 1 1, auto !important;
     display: flex;
     align-items: center;
 }
